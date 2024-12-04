@@ -1,8 +1,11 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { AlertCircle, Bot, DollarSign, Eye, Shield, Zap } from 'lucide-react'
+import DotPattern from "@/components/ui/dot-pattern"
+import { cn } from "@/lib/utils"
+import HyperText from "@/components/ui/hyper-text"
+
 
 export default function LandingPage() {
   return (
@@ -29,8 +32,14 @@ export default function LandingPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  Monitor Ethereum Contracts <span className="bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text">in Real-Time</span>
+                <h1 className="text-3xl font-bold  tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                  Monitor Ethereum Contracts
+                  <span className="flex justify-center">
+                    <HyperText
+                      className="bg-gradient-to-r  from-blue-400 to-purple-600 text-transparent bg-clip-text"
+                      text="in Real-Time"
+                    />
+                  </span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl">
                   Stay on top of your smart contract balances with our Telegram bot. Get instant notifications when thresholds are met or exceeded.
@@ -51,6 +60,7 @@ export default function LandingPage() {
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text">Features</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
               <Card className="bg-gray-900 border-gray-800 hover:border-blue-500 transition-colors">
                 <CardHeader>
                   <Eye className="w-8 h-8 mb-2 text-blue-400" />
@@ -106,8 +116,11 @@ export default function LandingPage() {
                 </CardContent>
               </Card>
             </div>
+
+
           </div>
         </section>
+
         <section id="how-it-works" className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-gradient-to-b from-gray-900 to-black">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text">How It Works</h2>
@@ -153,6 +166,11 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+        <DotPattern
+          className={cn(
+            "[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]",
+          )}
+        />
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-gray-800">
         <p className="text-xs text-gray-500">© 2024 EtherWatch. All rights reserved.</p>
