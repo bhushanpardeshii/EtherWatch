@@ -5,7 +5,8 @@ import { AlertCircle, Bot, DollarSign, Eye, Shield, Zap } from 'lucide-react'
 import DotPattern from "@/components/ui/dot-pattern"
 import { cn } from "@/lib/utils"
 import HyperText from "@/components/ui/hyper-text"
-
+import { LampContainer } from "@/components/ui/lamp"
+import { motion } from "framer-motion";
 
 export default function LandingPage() {
   return (
@@ -57,6 +58,7 @@ export default function LandingPage() {
           </div>
         </section>
         <section id="features" className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-black">
+
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text">Features</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -168,7 +170,7 @@ export default function LandingPage() {
         </section>
         <DotPattern
           className={cn(
-            "[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]",
+            " [mask-image:radial-gradient(600px_circle_at_center,white,transparent)]",
           )}
         />
       </main>
