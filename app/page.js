@@ -157,7 +157,7 @@ export default function LandingPage() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text">Start Monitoring Today</h2>
                 <p className="mx-auto max-w-[600px] text-gray-400 md:text-xl">
-                  Join our Telegram bot and start monitoring your Ethereum smart contracts in real-time. It's quick, easy, and powerful.
+                  Join our Telegram bot and start monitoring your Ethereum smart contracts in real-time. Its quick, easy, and powerful.
                 </p>
               </div>
               <div className="w-full max-w-sm space-y-2">
