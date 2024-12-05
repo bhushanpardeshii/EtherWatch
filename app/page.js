@@ -87,7 +87,7 @@ export default function LandingPage() {
                   <CardTitle className="text-gray-100">Secure Integration</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-400">Built on Alchemy's robust Ethereum API for reliable and secure blockchain data.</p>
+                  <p className="text-gray-400">Built on Alchemys robust Ethereum API for reliable and secure blockchain data.</p>
                 </CardContent>
               </Card>
               <Card className="bg-gray-900 border-gray-800 hover:border-blue-500 transition-colors">
